@@ -1,0 +1,50 @@
+.problem {
+    background-color: #FAFAFA;
+    padding: 100px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.problem__content {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.problem__caption {
+    color: #1E4A17;
+    font-size: 20px;
+    font-weight: 700; /* bold */
+    margin-bottom: 1rem;
+}
+
+.problem__title {
+    color: #21272A;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 1.5rem;
+}
+
+.problem__description {
+    color: #21272A;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media (max-width: 768px) {
+    .problem {
+        padding: 60px 0;
+    }
+
+    .problem__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .problem__caption,
+    .problem__description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
