@@ -37,14 +37,17 @@
         padding: 60px 0;
     }
 
-    .problem__title {
-        font-size: 36px;
-        line-height: 48px;
+    .problem__caption {
+        font-size: 16px;
+        line-height: 24px;
     }
 
-    .problem__caption,
+    .problem__title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
     .problem__description {
-        font-size: 18px;
-        line-height: 28px;
+        display: none;
     }
 }
