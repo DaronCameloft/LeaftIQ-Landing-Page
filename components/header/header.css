@@ -1,0 +1,144 @@
+/* ================================== */
+/* ESTILOS DEL HEADER        */
+/* ================================== */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+/* Contenedor reutilizable para centrar */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Estilos del Logo */
+.header__logo img {
+    height: 40px; /* Un poco más grande para que se vea bien */
+}
+
+
+/* ================================== */
+/* CORRECCIÓN 3: FALTABA ESTO     */
+/* Estilos de la lista y los enlaces */
+/* ================================== */
+
+.header__list {
+    display: flex; /* <-- Pone la lista en horizontal */
+    list-style: none; /* <-- Quita los puntos (bullets) */
+    padding: 0;
+    margin: 0; /* Quita márgenes por defecto del navegador */
+    gap: 2rem;
+}
+
+.header__link {
+    text-decoration: none; /* <-- Quita el subrayado */
+    color: #555;
+    transition: color 0.3s;
+}
+
+.header__link:hover {
+    color: #007bff; /* Color al pasar el mouse */
+}
+
+
+/* ================================== */
+/* Estilos de los Botones      */
+/* ================================== */
+
+.header__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__button {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+/* CORRECCIÓN 4: Clases con doble guion */
+.button--primary {
+    background-color: #333;
+    color: #fff;
+}
+.button--primary:hover {
+    background-color: #555;
+}
+
+.button--secondary {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ddd;
+}
+.button--secondary:hover {
+    background-color: #f9f9f9;
+}
+
+
+/* ================================== */
+/* Estilos del Toggle         */
+/* ================================== */
+
+.header__toggle {
+    display: none; /* Oculto en escritorio */
+    cursor: pointer;
+    font-size: 1.2rem; /* Tamaño para el texto "Menú" */
+}
+
+
+/* ================================== */
+/* REGLAS RESPONSIVE          */
+/* ================================== */
+
+@media (max-width: 768px) {
+    
+    /* Ocultamos el menú normal y los botones */
+    .header__menu,
+    .header__buttons {
+        display: none;
+    }
+
+    /* Mostramos el botón de hamburguesa */
+    .header__toggle {
+        display: block; /* Lo hacemos visible */
+    }
+    
+    /* Estilos para el menú móvil cuando esté ACTIVO (por JS) */
+    .header__menu.is-active {
+        display: flex; 
+        position: absolute;
+        top: 70px; /* Justo debajo del header */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column; /* Apila los enlaces */
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    /* Estilos de la lista DENTRO del menú móvil */
+    .header__list {
+        flex-direction: column; /* Apila los <li> */
+        gap: 1.5rem;
+        align-items: center;
+    }
+}
