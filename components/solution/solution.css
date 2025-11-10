@@ -1,9 +1,5 @@
-/* ==================== SOLUTION SECTION ==================== */
-
 .solution {
-    /* CAMBIO: 80px arriba, 0 en horizontal, 0 abajo */
     padding: 80px 0 0;
-    
     background-color: #FFFFFF; 
     position: relative;
     z-index: 10;
@@ -11,22 +7,15 @@
 
 .solution__container {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr; /* Mantenemos más espacio para el texto */
+    grid-template-columns: 1.2fr 0.8fr;
     gap: 3rem; 
-    
-    /* CAMBIO 1: 
-       Ponemos la alineación por defecto en 'center' (medio).
-       Esto aplicará a la columna de texto.
-    */
     align-items: center; 
 }
-
-/* --- Contenido de Texto (Izquierda) --- */
 
 .solution__caption {
     color: #1E4A17;
     font-size: 20px;
-    font-weight: 700; /* Bold */
+    font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase; 
 }
@@ -34,7 +23,7 @@
 .solution__title {
     color: #21272A;
     font-size: 48px;
-    font-weight: 700; /* Bold */
+    font-weight: 700;
     line-height: 64px;
     margin-bottom: 1.5rem;
 }
@@ -43,19 +32,11 @@
     color: #21272A;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 500; /* Medium */
+    font-weight: 500;
 }
 
-/* --- Imagen (Derecha) --- */
-
 .solution__image {
-    /* Mantenemos el line-height 0 para un buen ajuste de imagen */
     line-height: 0; 
-
-    /* CAMBIO 2 (La magia): 
-       Sobreescribimos la alineación solo para esta columna.
-       Le decimos que se alinee al final (abajo).
-    */
     align-self: end;
 }
 
@@ -64,15 +45,14 @@
     height: auto;
 }
 
-/* === Responsive === */
 @media (max-width: 992px) {
     .solution__container {
         grid-template-columns: 1fr 1fr;
-        align-items: center; /* En tablet, centramos todo */
+        align-items: center; 
     }
 
     .solution__image {
-        align-self: center; /* Reseteamos el align-self */
+        align-self: center; 
     }
 }
 
@@ -83,20 +63,31 @@
         align-items: center; 
     }
     
+    .solution__content {
+        text-align: center;
+    }
+
     .solution__image {
-        align-self: center; /* Reseteamos el align-self */
+        align-self: center; 
         margin-top: 2rem;
+        padding-left: 40px;
+        padding-right: 40px;
     }
-
-    /* ... (resto de tus estilos responsive) ... */
+    
+    .solution__caption {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
     .solution__title {
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
     }
 
-    .solution__caption,
     .solution__description {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
     }
 }
