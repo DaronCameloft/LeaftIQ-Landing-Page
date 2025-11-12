@@ -17,8 +17,8 @@
 .features__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 4rem;     /* 64px */
-    column-gap: 2rem;  /* 32px */
+    row-gap: 4rem;
+    column-gap: 2rem;
 }
 .features__item {
     max-width: 308px;
@@ -32,7 +32,6 @@
     width: 48px;
     height: 48px;
     
-    /* Centrar el icono */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5rem; 
