@@ -1,3 +1,12 @@
+/* Caros Regular */
+@font-face {
+    font-family: 'Caros';
+    src: url('../fonts/cretype_Caros.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*header*/
 
 .header {
     width: 100%;
@@ -7,7 +16,29 @@
     z-index: 100;
     background-color: transparent;
     transition: background-color 0.3s ease;
+    font-family: 'Caros', sans-serif;
+
+    transform: translateY(0);
+    transition: transform 0.4s ease, 
+                
+    background-color 0.4s ease, 
+    box-shadow 0.4s ease;
 }
+
+
+.header.is-scrolled {
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header.is-hidden {
+    transform: translateY(-100%);
+}
+
 
 .header__nav {
     display: flex;

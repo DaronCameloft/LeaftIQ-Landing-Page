@@ -17,7 +17,9 @@ function handleHeroScroll() {
     const sectionTop = heroSection.offsetTop; 
     const sectionHeight = heroSection.offsetHeight; 
     const scrollPosition = window.scrollY; 
-    let scrollProgress = (scrollPosition - sectionTop) / (sectionHeight - window.innerHeight);
+    const animationScrollDistance = window.innerHeight * 2;
+
+    let scrollProgress = (scrollPosition - sectionTop) / animationScrollDistance;
     scrollProgress = Math.max(0, Math.min(1, scrollProgress));
 
     

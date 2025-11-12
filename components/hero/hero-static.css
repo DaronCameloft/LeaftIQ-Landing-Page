@@ -1,9 +1,17 @@
 
+/* Caros Regular */
+@font-face {
+    font-family: 'Caros';
+    src: url('../fonts/cretype_Caros.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 .hero-static {
  
     padding: 100px 0; 
 
-    background-color: var(--background-color); 
+    background-color: #F4F6F3;
 
     position: relative;
     z-index: 10; 
@@ -12,26 +20,26 @@
 
 .hero-static__container {
     display: grid;
-
+    
     grid-template-columns: 1fr 1fr;
     gap: 3rem; 
-
+    
     align-items: center; 
 }
 
 
 
 .hero-static__title {
-    font-family: 'Inter', sans-serif;
-    font-size: 2.5rem; 
-    font-weight: 700;
+    font-family: 'Caros', sans-serif;
+    font-size: 3em; 
+    font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1.5rem;
     color: #222; 
 }
 
 .hero-static__description {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Caros', sans-serif;
     font-size: 1rem; 
     line-height: 1.6;
     margin-bottom: 2rem;
