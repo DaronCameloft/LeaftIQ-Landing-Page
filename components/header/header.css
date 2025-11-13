@@ -14,7 +14,7 @@
     z-index: 100;
     background-color: transparent;
     transition: background-color 0.3s ease;
-    font-family: 'Caros', sans-serif;
+    font-family: 'Inter', sans-serif;
 
     transform: translateY(0);
     transition: transform 0.4s ease, 
