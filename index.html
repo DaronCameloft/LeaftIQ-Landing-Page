@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="components/features/features.css">
     <link rel="stylesheet" href="components/about/about.css">
     <link rel="stylesheet" href="components/testimonials/testimonials.css">
+    <link rel="stylesheet" href="components/faq/faq.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -447,11 +448,69 @@
             </div>
         </section>
 
+        <!-- aqui ira la seccion de costos-->
+
+        <section class="faq" id="faq">
+            <div class="faq__container container">
+
+                <p class="faq__caption"> INFORMACIÓN Y TRIVIALIDADES</p>
+                <h2 class="faq__title"> Preguntas frecuentes</h2>
+
+                <div class="faq__accordion">
+
+
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span>¿Necesito internet para usar LeafIQ?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>No. El núcleo de LeafIQ, incluyendo el diagnóstico por fotos, funciona 100% offline. La app solo necesita conexión ocasionalmente para sincronizar tu bitácora y recibir actualizaciones.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span>¿Qué tan preciso es el diagnóstico por imagen?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Nuestro modelo de IA on-device tiene una alta precisión para las plagas y enfermedades más comunes. Es una herramienta de orientación rápida; para casos críticos, siempre recomendamos confirmar con un agrónomo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span>¿Las alertas son realmente "hiperlocales"?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Sí. Usamos múltiples fuentes de datos meteorológicos para darte pronósticos y alertas (heladas, calor extremo) en un radio muy pequeño, mucho más preciso que el pronóstico de la ciudad.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span>La planta más diagnosticada en LeafIQ la semana pasada fue...</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>¡El Tomate! Los usuarios han estado diagnosticando principalmente "mildiu" y "deficiencia de magnesio" en sus tomateras.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
     </main>
     <script src="js/main.js"></script>
     
     <script src="components/header/header.js"></script>
     <script src="components/hero/hero.js"></script>
+    <script src="components/faq/faq.js"></script>
 
 </body>
 </html>
