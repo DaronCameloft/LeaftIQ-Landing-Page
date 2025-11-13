@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="components/about/about.css">
     <link rel="stylesheet" href="components/testimonials/testimonials.css">
     <link rel="stylesheet" href="components/faq/faq.css">
+    <link rel="stylesheet" href="components/contact/contact.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -500,6 +501,44 @@
                     </div>
 
                 </div>
+
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <div class="contact__container container">
+
+                <p class="contact__caption">CONTACTO</p>
+                <h2 class="contact__title">¿Hablamos?</h2>
+
+                <form class="contact__form">
+                    <div class="contact__field">
+                        <label for="name" class="contact__label">Nombre completo</label>
+                        <input type="text" id="name" class="contact__input" placeholder="DaronCameloft">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="email" class="contact__label">Correo electrónico</label>
+                        <input type="email" id="email" class="contact__input" placeholder="u202416274@upc.edu.pe">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="user-type" class="contact__label">Tipo de usuario</label>
+                        <input type="text" id="user-type" class="contact__input" placeholder="Urbano">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="message" class="contact__label">Mensaje</label>
+                        <textarea id="message" class="contact__input contact__textarea" placeholder="Hola! me encanta la aplicacion :D"></textarea>
+                    </div>
+
+                    <div class="contact__button-wrapper">
+                        <button type="submit" class="contact__button button--primary">
+                            Enviar mensaje
+                        </button>
+                    </div>
+
+                </form>
 
             </div>
         </section>
