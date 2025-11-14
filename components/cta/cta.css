@@ -16,7 +16,7 @@
 }
 
 .cta__image-wrapper {
-    width: 200px;
+    width: 250px;
     z-index: 10;
 }
 
@@ -73,11 +73,11 @@
 @media (max-width: 768px) {
     
     .cta__word {
-        font-size: 2rem; 
+        font-size: 1.5rem; 
     }
 
     .cta__image-wrapper {
-        width: 150px;
+        width: 200px;
     }
 
     .cta__button {

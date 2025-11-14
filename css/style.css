@@ -3,10 +3,11 @@
 /* Caros Regular */
 @font-face {
   font-family: 'Caros';
-  src: url('../assets/fonts/Caros.otf') format('opentype');
+  src: url('../assets/fonts/Caros-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
+
 
 :root {
     --background-color: #D9DED8;
