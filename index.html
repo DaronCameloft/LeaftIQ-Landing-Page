@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="components/features/features.css">
     <link rel="stylesheet" href="components/about/about.css">
     <link rel="stylesheet" href="components/testimonials/testimonials.css">
+    <link rel="stylesheet" href="components/pricing/pricing.css">
     <link rel="stylesheet" href="components/faq/faq.css">
     <link rel="stylesheet" href="components/contact/contact.css">
     <link rel="stylesheet" href="components/cta/cta.css">
@@ -451,7 +452,84 @@
             </div>
         </section>
 
-        <!-- aqui ira la seccion de costos-->
+        <section class="pricing" id="precios">
+            <div class="pricing__container container">
+                
+                <div class="pricing__header">
+                    <p class="pricing__caption">PRECIOS</p>
+                    <h2 class="pricing__title">Empieza gratis. Escala cuando lo necesites.</h2>
+                    <p class="pricing__description">
+                        LeafIQ te ayuda a cuidar tus plantas con inteligencia artificial, alertas climáticas y planes personalizados. Elige el plan que se adapte a tus necesidades y empieza hoy.
+                    </p>
+                </div>
+
+                <div class="pricing__toggle-wrapper">
+                    <div class="pricing__toggle-label">
+                        <span class="pricing__toggle-badge">33% OFF</span>
+                        <span>Anualmente</span>
+                    </div>
+                    <label class="pricing__toggle" for="pricing-toggle">
+                        <input type="checkbox" id="pricing-toggle" class="pricing__toggle-input">
+                        <span class="pricing__toggle-slider"></span>
+                    </label>
+                    <span>Mensualmente</span>
+                </div>
+
+                <div class="pricing__grid">
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">LeafIQ Free</h3>
+                            <p class="pricing-card__subtitle">Precios referenciales de demo</p>
+                        </div>
+                        <div class="pricing-card__price-wrapper">
+                            <span class="pricing-card__price">S/ 0</span>
+                        </div>
+                        <a href="#" class="pricing-card__button button--free">Empezar gratis</a>
+                        
+                        <ul class="pricing-card__features">
+                            <li>Diagnóstico por imagen (límite mensual)</li>
+                            <li>1 zona de clima/alertas</li>
+                            <li>Calendario básico de riego/siembra</li>
+                            <li>Acceso a foro</li>
+                            <li>Plan de cuidados (manual)</li>
+                            <li>Herramientas completas</li>
+                            <li>Modo offline + sincronización</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card pricing-card--pro">
+                        <span class="pricing-card__badge">Más Popular</span>
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">LeafIQ Pro</h3>
+                            <p class="pricing-card__subtitle">Precios referenciales de demo</p>
+                        </div>
+                        
+                        <div class="pricing-card__price-wrapper">
+                            <span class="pricing-card__price-strikethrough" id="price-annual-strikethrough">S/ 45</span>
+                            <span class="pricing-card__price" id="price-annual">S/ 30</span>
+
+                            <span class="pricing-card__price hidden" id="price-monthly">S/ 45</span>
+                            
+                            <span class="pricing-card__price-period">S/ 30 mes, pagando anualmente</span>
+                        </div>
+                        
+                        <a href="#" class="pricing-card__button button--pro">Empezar Pro</a>
+                        
+                        <ul class="pricing-card__features">
+                            <li>Todo en Free</li>
+                            <li>Diagnósticos ilimitados</li>
+                            <li>Plan de cuidado personalizado (con IA)</li>
+                            <li>Exportación de "Mi Impacto Sostenible"</li>
+                            <li>Perfiles por cultivo/lote</li>
+                            <li>Reportes de ahorro de agua e insumos</li>
+                            <li>Descuentos en proveedores</li>
+                            <li>Acceso a analíticas avanzadas</li>
+                        </ul>
+                    </div>
+
+                </div> </div>
+        </section>
 
         <section class="faq" id="faq">
             <div class="faq__container container">
@@ -660,6 +738,7 @@
     
     <script src="components/header/header.js"></script>
     <script src="components/hero/hero.js"></script>
+    <script src="components/pricing/pricing.js"></script>
     <script src="components/faq/faq.js"></script>
     <script src="components/cta/cta.js"></script>
 
