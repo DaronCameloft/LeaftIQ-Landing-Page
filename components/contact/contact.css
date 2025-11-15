@@ -100,3 +100,13 @@
 .contact__button:hover {
     background-color: #275213;
 }
+
+@media (max-width: 768px) {
+  
+    .contact__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    
+}
