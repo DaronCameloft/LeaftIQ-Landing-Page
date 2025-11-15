@@ -86,3 +86,13 @@
 .faq__question.is-active .faq__icon {
     transform: rotate(45deg);
 }
+
+@media (max-width: 768px) {
+  
+    .faq__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    
+}
