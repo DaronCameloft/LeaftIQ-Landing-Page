@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeafIQ</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/hero/hero.css">
+    <link rel="stylesheet" href="components/hero/hero-static.css">
+    <link rel="stylesheet" href="components/problem/problem.css">
+    <link rel="stylesheet" href="components/segments/segments.css">
+    <link rel="stylesheet" href="components/solution/solution.css">
+    <link rel="stylesheet" href="components/features/features.css">
+    <link rel="stylesheet" href="components/about/about.css">
+    <link rel="stylesheet" href="components/testimonials/testimonials.css">
+    <link rel="stylesheet" href="components/pricing/pricing.css">
+    <link rel="stylesheet" href="components/faq/faq.css">
+    <link rel="stylesheet" href="components/contact/contact.css">
+    <link rel="stylesheet" href="components/cta/cta.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+
+<body>
+    
+    <header class="header">
+        <nav class="header__nav container">
+            <a href="#" class="header__logo">
+                <img src="assets/images/logo.png" alt="Logo_LeaftIQ">
+            </a>
+
+            <div class="header__menu" id="nav-menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#problema" class="header__link">Problema</a>
+                    </li>
+                                        <li class="header__item">
+                        <a href="#solucion" class="header__link">Solucion</a>
+                    </li>
+                                        <li class="header__item">
+                        <a href="#nosotros" class="header__link">Nosotros</a>
+                    </li>
+                                        <li class="header__item">
+                        <a href="#precios" class="header__link">Precios</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__buttons">
+                <a href="/login" class="header__button button--secondary">
+                    Iniciar sesión
+                </a>
+                <a href="/pro" class="header__button button--primary">
+                    Probar LeafIQ Pro
+                </a>
+            </div>
+
+            <div class="header__toggle" id="nav-toggle">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round"
+                >
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-parallax">
+            
+            <div class="hero-parallax__sticky-container">
+
+                <div class="hero-parallax__text-group hero-text-1">
+                    <h1>LeafIQ by ArcadiaDevs</h1>
+                </div>
+                
+                <div class="hero-parallax__text-group hero-text-2">
+                    <h1>LeafIQ</h2>
+                    <h2>La inteligencia crece aquí</h2>
+                    <div class="hero-text-2__underline"></div>
+                </div>
+                
+                <div class="hero-parallax__image-group">
+                    <img src="assets/images/img1.png" alt="Planta 1" data-index="1">
+                    <img src="assets/images/img2.png" alt="Planta 2" data-index="2">
+                    <img src="assets/images/img3.png" alt="Planta 3" data-index="3">
+                    <img src="assets/images/img4.png" alt="Planta 4" data-index="4">
+                    <img src="assets/images/img5.png" alt="Planta 5" data-index="5">
+                    <img src="assets/images/img6.png" alt="Planta 6" data-index="6">
+                </div>
+
+            </div>
+
+        </section>
+
+
+    <section class="hero-static" id="hero_statico">
+
+        <div class="hero-static__container container">
+
+            <div class="hero-static__content">
+                <h2 class="hero-static__title">
+                    Cuida tus plantas y cultivos con inteligencia
+                </h2>
+                <p class="hero-static__description">
+                    Identifica plagas con una foto, recibe alertas climá ticas hiperlocales y obtén planes de riego y nutrientes según tu zona. Funciona offline y sincroniza cuando vuelves a tener señal.
+                </p>
+                <div class="hero-static__buttons">
+                    <a href="/empezar" class="hero-button button--primary_hero">
+                        Empezar gratis &nbsp; &rarr;
+                    </a> 
+                    <a href="/demo" class="hero-button button--secondary">
+                        Ver demo
+                    </a> 
+                </div>
+            </div>
+
+            <div class="hero-static__image">
+                <img src="assets/images/img_hero_right.jpg" alt="Cultivos en cajas de madera">
+            </div>
+
+        </div>
+    </section>
+
+        <section class="problem" id="problema">
+            <div class="problem__container container">
+                <div class="problem__content">
+                    <p class="problem__caption">
+                        TAL VEZ TE PREGUNTES
+                    </p>
+                    <h2 class="problem__title">
+                        ¿Por qué es tan difícil cuidar bien un cultivo?
+                    </h2>
+                    <p class="problem__description">
+                        La variabilidad del clima, la falta de diagnósticos rápidos y la escasez de asesoría accesible provocan pérdidas y malgasto de agua, tanto en huertos urbanos como en pequeñas parcelas rurales. LeafIQ reduce la incertidumbre con datos y guías prácticas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="segments">
+            <div class="segments__segment segments__segment--rural">
+                <h3 class="segments__title">segmento rural</h3>
+                
+                <div class="segments__stats-grid">
+                    <div class="segments__stat">
+                        <div class="segments__icon icon--thunderstorm"></div>
+                        <p class="segments__text">
+                            3 de cada 5 pequeños productores reportan pérdidas por clima impredecible.
+                        </p>
+                    </div>
+
+                    <div class="segments__stat">
+                        <div class="segments__icon icon--calendar"></div>
+                        <p class="segments__text">
+                            Hasta 25% del riego puede perderse por calendarios no optimizados.
+                        </p>
+                    </div>
+
+                    <div class="segments__stat">
+                        <div class="segments__icon icon--bug"></div>
+                        <p class="segments__text">
+                            40% de incidencias tardías de plagas se detectan cuando el daño ya es alto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="segments__segment segments__segment--urbano">
+                <h3 class="segments__title">segmento urbano</h3>
+
+                <div class="segments__stats-grid">
+                    <div class="segments__stat">
+                        <div class="segments__icon icon--thunderstorm"></div>
+                        <p class="segments__text">
+                            62% de los huerteros abandona por "falta de tiempo/guía".
+                        </p>
+                    </div>
+
+                    <div class="segments__stat">
+                        <div class="segments__icon icon--calendar"></div>
+                        <p class="segments__text">
+                            48% riega de más en verano por no contar con alertas locales.
+                        </p>
+                    </div>
+
+                    <div class="segments__stat">
+                        <div class="segments__icon icon--bug"></div>
+                        <p class="segments__text">
+                            30% no sabe identificar la plaga/enfermedad a simple vista.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solution" id="solucion">
+            <div class="solution__container container">
+
+                <div class="solution__content">
+                    <p class="solution__caption">
+                        ¿CUÁL ES LA SOLUCIÓN?
+                    </p>
+                    <h2 class="solution__title">
+                        Una app que te guía con IA, clima local y comunidad
+                    </h2>
+                    <p class="solution__description">
+                        LeafIQ combina foto-diagnóstico con IA, pronóstico hiperlocal y recomendaciones accionables. Aprende de tu contexto (tipo de planta, etapa, suelo y clima) y arma un plan simple que puedes seguir día a día.
+                    </p>
+                </div>
+
+                <div class="solution__image">
+                    <picture>
+                        <source 
+                            media="(max-width: 768px)" 
+                            srcset="assets/images/marco_principal_mobile.png">
+                        
+                        <img 
+                            src="assets/images/marco_principal.png" 
+                            alt="Mockup de la app LeafIQ en un celular">
+                    </picture>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features__container container">
+                
+                <h2 class="features__title">Características</h2>
+
+                <div class="features__grid">
+                    
+                    <div class="features__item">
+                        <div class="features__icon icon--camera"></div>
+                        <h3 class="features__item-title">Foto-Diagnóstico</h3>
+                        <p class="features__item-description">
+                            Sube una foto y recibe posibles plagas/enfermedades con acciones inmediatas.
+                        </p>
+                    </div>
+
+                    <div class="features__item">
+                        <div class="features__icon icon--calendar-alert"></div>
+                        <h3 class="features__item-title">Alertas Climáticas</h3>
+                        <p class="features__item-description">
+                            Heladas, olas de calor, lluvias y viento según tu ubicación exacta.
+                        </p>
+                    </div>
+
+                    <div class="features__item">
+                        <div class="features__icon icon--clipboard"></div>
+                        <h3 class="features__item-title">Plan de Riego & Cuidados</h3>
+                        <p class="features__item-description">
+                            Calendario inteligente por especie, etapa y clima semanal.
+                        </p>
+                    </div>
+
+                    <div class="features__item">
+                        <div class="features__icon icon--book"></div>
+                        <h3 class="features__item-title">Bitácora digital para cultivos</h3>
+                        <p class="features__item-description">
+                            Ventanas óptimas para sembrar y trasplantar en tu zona.
+                        </p>
+                    </div>
+
+                    <div class="features__item">
+                        <div class="features__icon icon--wifi-off"></div>
+                        <h3 class="features__item-title">Modo Offline</h3>
+                        <p class="features__item-description">
+                            Registra actividades sin señal y sincroniza al reconectarte.
+                        </p>
+                    </div>
+
+                    <div class="features__item">
+                        <div class="features__icon icon--users"></div>
+                        <h3 class="features__item-title">Foro colaborativo</h3>
+                        <p class="features__item-description">
+                            Resuelve tus dudas y ayuda a los demás usuarios
+                        </p>
+                    </div>
+
+                    <div class="features__item">
+                        <div class="features__icon icon--shop"></div>
+                        <h3 class="features__item-title">Proveedores cercanos</h3>
+                        <p class="features__item-description">
+                            Encuentra plantas recomendadas para ti muy cerca de ti.
+                        </p>
+                    </div>
+
+                    <div class="features__item">
+                        <div class="features__icon icon--leaf"></div>
+                        <h3 class="features__item-title">Mi Impacto Sostenible</h3>
+                        <p class="features__item-description">
+                            Ve cuánta agua ahorras y cuántos kg de residuos compostas.
+                        </p>
+                    </div>
+
+                </div> <div class="features__button-wrapper">
+                    <a href="/demo" class="features__button">
+                        Ver demo
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="section-about">
+            <h2 class="section-title white-text">Sobre la startup</h2>
+            <div class="about-content">
+                <button class="arrow-btn">&#8249;</button>
+                <div class="founder-info">
+                    <img src="assets/images/ceo.png" alt="DaronCameloft" class="avatar" />
+                    <p class="description white-text">
+                        LeafIQ es un proyecto de ArcadiaDevs. Creamos herramientas accesibles
+                        para agricultores y huerteros que necesitan decisiones simples basadas
+                        en datos, sin perder el toque humano y comunitario.
+                    </p>
+                    <strong class="founder-name white-text">DaronCameloft</strong>
+                    <p class="founder-role white-text">CEO</p>
+                </div>
+                <button class="arrow-btn">&#8250;</button>
+            </div>
+        </section>
+        <section class="section-team" id="nosotros">
+            <h3 class="section-subtitle">NOSOTROS</h3>
+            <h2 class="section-title">Somos ArcadiaDevs</h2>
+
+            <div class="team-grid">
+
+                <article class="team-member">
+                    <div class="member-content">
+                        <img src="assets/images/victor.png" alt="Víctor Paredes Maza" class="member-photo" />
+                        <h4 class="member-name">Víctor Paredes Maza</h4>
+                        <p class="member-role">Chief Executive Officer</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <button class="btn-contact">Contacta a Víctor</button>
+                </article>
+
+                <article class="team-member">
+                    <div class="member-content">
+                        <img src="assets/images/carlitos.png" alt="Carlitos Garcia Jayo" class="member-photo" />
+                        <h4 class="member-name">Carlitos Garcia Jayo</h4>
+                        <p class="member-role">Chief Technology Officer</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <button class="btn-contact">Contacta a Carlitos</button>
+                </article>
+
+                <article class="team-member">
+                    <div class="member-content">
+                        <img src="assets/images/fabricio.png" alt="Fabrizio Santi Guerrero" class="member-photo" />
+                        <h4 class="member-name">Fabrizio Santi Guerrero</h4>
+                        <p class="member-role">Chief Product Officer</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <button class="btn-contact">Contacta a Fabrizio</button>
+                </article>
+
+                <article class="team-member">
+                    <div class="member-content">
+                        <img src="assets/images/aldo.png" alt="Aldo Machacca Soto" class="member-photo" />
+                        <h4 class="member-name">Aldo Machacca Soto</h4>
+                        <p class="member-role">Chief Marketing Officer</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <button class="btn-contact">Contacta a Aldo</button>
+                </article>
+
+                <article class="team-member">
+                    <div class="member-content">
+                        <img src="assets/images/gustavo.png" alt="Gustavo Herrera Choque" class="member-photo" />
+                        <h4 class="member-name">Gustavo Herrera Choque</h4>
+                        <p class="member-role">Operaciones y Finanzas</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <button class="btn-contact">Contacta a Gustavo</button>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section-testimonials">
+
+            <div class="testimonial-logos">
+                <img src="assets/images/logo1.png" alt="Ultra Clear" />
+                <img src="assets/images/logo2.png" alt="Mega Standard" />
+                <img src="assets/images/logo3.png" alt="Hyper Best" />
+                <img src="assets/images/logo4.png" alt="Ultimate Award" />
+                <img src="assets/images/logo5.png" alt="Ultra Prestigious" />
+            </div>
+
+            <h3 class="section-subtitle">COMENTARIOS</h3>
+            <h2 class="section-title">Lo que dice la comunidad</h2>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <p class="testimonial-tag"><i class="fas fa-seedling"></i> Huerto urbano</p>
+                    <p class="testimonial-text">
+                        Identifiqué arañita roja a tiempo. Mi albahaca se recuperó en una semana
+                    </p>
+                    <img src="assets/images/avatar-brighite.png" alt="Brighite" class="testimonial-avatar" />
+                    <p class="testimonial-name">Brighite. R</p>
+                    <p class="testimonial-role">Usuario LeafIQ Pro</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-tag"><i class="fas fa-seedling"></i> Huerto urbano</p>
+                    <p class="testimonial-text">
+                        El plan personalizado para mi planta hizo que ganara un concurso
+                    </p>
+                    <img src="assets/images/avatar-arsol.png" alt="Arsol" class="testimonial-avatar" />
+                    <p class="testimonial-name">Arsol P.</p>
+                    <p class="testimonial-role">Usuario LeafIQ Pro</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-tag"><i class="fas fa-seedling"></i> Productor periurbano</p>
+                    <p class="testimonial-text">
+                        La alerta de helada me salvó el almácigo. Pude cubrirlo a tiempo
+                    </p>
+                    <img src="assets/images/avatar-jose.png" alt="José" class="testimonial-avatar" />
+                    <p class="testimonial-name">José L.</p>
+                    <p class="testimonial-role">Usuario LeafIQ Pro</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="precios">
+            <div class="pricing__container container">
+                
+                <div class="pricing__header">
+                    <p class="pricing__caption">PRECIOS</p>
+                    <h2 class="pricing__title">Empieza gratis. Escala cuando lo necesites.</h2>
+                    <p class="pricing__description">
+                        LeafIQ te ayuda a cuidar tus plantas con inteligencia artificial, alertas climáticas y planes personalizados. Elige el plan que se adapte a tus necesidades y empieza hoy.
+                    </p>
+                </div>
+
+                <div class="pricing__toggle-wrapper">
+                    <div class="pricing__toggle-label">
+                        <span class="pricing__toggle-badge">33% OFF</span>
+                        <span>Anualmente</span>
+                    </div>
+                    <label class="pricing__toggle" for="pricing-toggle">
+                        <input type="checkbox" id="pricing-toggle" class="pricing__toggle-input">
+                        <span class="pricing__toggle-slider"></span>
+                    </label>
+                    <span>Mensualmente</span>
+                </div>
+
+                <div class="pricing__grid">
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">LeafIQ Free</h3>
+                            <p class="pricing-card__subtitle">Precios referenciales de demo</p>
+                        </div>
+                        <div class="pricing-card__price-wrapper">
+                            <span class="pricing-card__price">S/ 0</span>
+                        </div>
+                        <a href="#" class="pricing-card__button button--free">Empezar gratis</a>
+                        
+                        <ul class="pricing-card__features">
+                            <li>Diagnóstico por imagen (límite mensual)</li>
+                            <li>1 zona de clima/alertas</li>
+                            <li>Calendario básico de riego/siembra</li>
+                            <li>Acceso a foro</li>
+                            <li>Plan de cuidados (manual)</li>
+                            <li>Herramientas completas</li>
+                            <li>Modo offline + sincronización</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card pricing-card--pro">
+                        <span class="pricing-card__badge">Más Popular</span>
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">LeafIQ Pro</h3>
+                            <p class="pricing-card__subtitle">Precios referenciales de demo</p>
+                        </div>
+                        
+                        <div class="pricing-card__price-wrapper">
+                            <span class="pricing-card__price-strikethrough" id="price-annual-strikethrough">S/ 45</span>
+                            <span class="pricing-card__price" id="price-annual">S/ 30</span>
+
+                            <span class="pricing-card__price hidden" id="price-monthly">S/ 45</span>
+                            
+                            <span class="pricing-card__price-period">S/ 30 mes, pagando anualmente</span>
+                        </div>
+                        
+                        <a href="#" class="pricing-card__button button--pro">Empezar Pro</a>
+                        
+                        <ul class="pricing-card__features">
+                            <li>Todo en Free</li>
+                            <li>Diagnósticos ilimitados</li>
+                            <li>Plan de cuidado personalizado (con IA)</li>
+                            <li>Exportación de "Mi Impacto Sostenible"</li>
+                            <li>Perfiles por cultivo/lote</li>
+                            <li>Reportes de ahorro de agua e insumos</li>
+                            <li>Descuentos en proveedores</li>
+                            <li>Acceso a analíticas avanzadas</li>
+                        </ul>
+                    </div>
+
+                </div> </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="faq__container container">
+
+                <p class="faq__caption"> INFORMACIÓN Y TRIVIALIDADES</p>
+                <h2 class="faq__title"> Preguntas frecuentes</h2>
+
+                <div class="faq__accordion">
+
+
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span>¿Necesito internet para usar LeafIQ?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>No. El núcleo de LeafIQ, incluyendo el diagnóstico por fotos, funciona 100% offline. La app solo necesita conexión ocasionalmente para sincronizar tu bitácora y recibir actualizaciones.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span>¿Qué tan preciso es el diagnóstico por imagen?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Nuestro modelo de IA on-device tiene una alta precisión para las plagas y enfermedades más comunes. Es una herramienta de orientación rápida; para casos críticos, siempre recomendamos confirmar con un agrónomo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span>¿Las alertas son realmente "hiperlocales"?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Sí. Usamos múltiples fuentes de datos meteorológicos para darte pronósticos y alertas (heladas, calor extremo) en un radio muy pequeño, mucho más preciso que el pronóstico de la ciudad.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item">
+                        <button class="faq__question">
+                            <span>La planta más diagnosticada en LeafIQ la semana pasada fue...</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>¡El Tomate! Los usuarios han estado diagnosticando principalmente "mildiu" y "deficiencia de magnesio" en sus tomateras.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <div class="contact__container container">
+
+                <p class="contact__caption">CONTACTO</p>
+                <h2 class="contact__title">¿Hablamos?</h2>
+
+                <form class="contact__form">
+                    <div class="contact__field">
+                        <label for="name" class="contact__label">Nombre completo</label>
+                        <input type="text" id="name" class="contact__input" placeholder="DaronCameloft">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="email" class="contact__label">Correo electrónico</label>
+                        <input type="email" id="email" class="contact__input" placeholder="u202416274@upc.edu.pe">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="user-type" class="contact__label">Tipo de usuario</label>
+                        <input type="text" id="user-type" class="contact__input" placeholder="Urbano">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="message" class="contact__label">Mensaje</label>
+                        <textarea id="message" class="contact__input contact__textarea" placeholder="Hola! me encanta la aplicacion :D"></textarea>
+                    </div>
+
+                    <div class="contact__button-wrapper">
+                        <button type="submit" class="contact__button button--primary">
+                            Enviar mensaje
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+
+        <section class="cta" id="cta">
+            
+            <div class="cta__word word-1">La</div>
+            <div class="cta__word word-2">Inteligencia</div>
+            <div class="cta__word word-3">Crece</div>
+            <div class="cta__word word-4">Aquí</div>
+            <div class="cta__word word-5">ArcadiaDevs</div>
+            <div class="cta__word word-6">LeafIQ</div>
+            
+            <div class="cta__container container">
+                <div class="cta__image-wrapper">
+                    <img src="assets/images/menu_leafiq.png" 
+                        alt="Pantalla principal de la app LeafIQ">
+                </div>
+
+                <a href="#playstore" class="cta__button button--primary">
+                    <img src="assets/icons/playstore.svg" alt="Descargar de Play Store" class="cta__button-icon">
+                    <span>Descarga LeafIQ</span>
+                </a>
+            </div>
+        </section>
+
+
+        <footer class="footer" id="contacto-footer">
+            
+
+            <div class="footer__newsletter">
+                <div class="footer__newsletter-container container">
+                    
+                    <a href="/" class="footer__logo">
+                        <img src="assets/images/logo_leaf_white.png" alt="Logo LeafIQ">
+                    </a>
+                    
+                    <div class="footer__newsletter-form">
+                        <img src="assets/icons/gmail.svg" alt="email" class="footer__newsletter-icon">
+                        <input type="email" placeholder="Ingresa tu gmail para recibir las ultimas actualizaciones" class="footer__newsletter-input">
+                    </div>
+                    
+                    <button type="submit" class="footer__newsletter-button">Suscribirse</button>
+                </div>
+            </div>
+
+            <div class="footer__main-grid container">
+                
+                <div class="footer__column">
+                    <h4 class="footer__title">Producto</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Diagnóstico por foto</a></li>
+                        <li><a href="#">Alertas climáticas hiperlocales</a></li>
+                        <li><a href="#">Plan de riego y nutrientes</a></li>
+                        <li><a href="#">Mi Impacto Sostenible</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Recursos</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Guías & Cursos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Foro de la comunidad</a></li>
+                        <li><a href="#">Centro de ayuda</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Empresa</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Sobre LeafIQ (ArcadiaDevs)</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Precios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Descarga LeafIQ</h4>
+                    <div class="footer__app-buttons">
+                        <a href="#"><img src="assets/icons/playstore.svg" alt="Google Play"></a>
+                    </div>
+                        <h4 class="footer__title footer__title--redes">Redes</h4>
+                        <div class="footer__social-links">
+                        <a href="#"><img src="assets/icons/youtube.svg" alt="Youtube"></a>
+                        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+                        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom container">
+                
+                <div class="footer__bottom-left">
+                    <div class="footer__copyright">
+                        <p>© 2025 LeafIQ — ArcadiaDevs. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="footer__legal-links">
+                        <a href="#">Términos</a>
+                        <a href="#">Privacidad</a>
+                        <a href="#">Licencias</a>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom-right">
+                    <span class="footer__big-word">LeafIQ</span>
+                </div>
+            </div>
+    </footer>
+
+    </main>
+    <script src="js/main.js"></script>
+    
+    <script src="components/header/header.js"></script>
+    <script src="components/hero/hero.js"></script>
+    <script src="components/pricing/pricing.js"></script>
+    <script src="components/faq/faq.js"></script>
+    <script src="components/cta/cta.js"></script>
+
+    <!-- libreria de prueba para el footer animado-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+</body>
+</html>

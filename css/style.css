@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+/* Caros Regular */
+@font-face {
+  font-family: 'Caros';
+  src: url('../assets/fonts/Caros-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root {
+    --background-color: #D9DED8;
+    --text-color: #222;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+}
