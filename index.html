@@ -495,19 +495,19 @@
                     <div class="pricing-card">
                         <div class="pricing-card__header">
                             <h3 class="pricing-card__title">LeafIQ Free</h3>
-                            <p class="pricing-card__subtitle">Precios referenciales de demo</p>
                         </div>
                         <div class="pricing-card__price-wrapper">
                             <span class="pricing-card__price">S/ 0</span>
+                            <span class="pricing-card__price-period" style="visibility: hidden;">Gratis para siempre</span>
                         </div>
                         <a href="#" class="pricing-card__button button--free">Empezar gratis</a>
                         
                         <ul class="pricing-card__features">
-                            <li>Diagnóstico por imagen (límite mensual)</li>
+                            <li>5 Diagnósticos por mes</li>
                             <li>1 zona de clima/alertas</li>
                             <li>Calendario básico de riego/siembra</li>
                             <li>Acceso a foro</li>
-                            <li>Plan de cuidados (manual)</li>
+                            <li>Guías de cuidado estándar</li>
                             <li>Herramientas completas</li>
                             <li>Modo offline + sincronización</li>
                         </ul>
@@ -517,33 +517,38 @@
                         <span class="pricing-card__badge">Más Popular</span>
                         <div class="pricing-card__header">
                             <h3 class="pricing-card__title">LeafIQ Pro</h3>
-                            <p class="pricing-card__subtitle">Precios referenciales de demo</p>
                         </div>
                         
                         <div class="pricing-card__price-wrapper">
                             <span class="pricing-card__price-strikethrough" id="price-annual-strikethrough">S/ 45</span>
                             <span class="pricing-card__price" id="price-annual">S/ 30</span>
-
+                            
                             <span class="pricing-card__price hidden" id="price-monthly">S/ 45</span>
                             
-                            <span class="pricing-card__price-period">S/ 30 mes, pagando anualmente</span>
+                            <span class="pricing-card__price-period" id="text-annual">S/ 30 al mes, facturado <strong>S/ 360 anual</strong></span>
+                            <span class="pricing-card__price-period hidden" id="text-monthly">Facturado mensualmente</span>
                         </div>
                         
-                        <a href="#" class="pricing-card__button button--pro">Empezar Pro</a>
+                        <a href="#" class="pricing-card__button button--pro">Empezar Plan Pro</a>
                         
                         <ul class="pricing-card__features">
                             <li>Todo en Free</li>
-                            <li>Diagnósticos ilimitados</li>
-                            <li>Plan de cuidado personalizado (con IA)</li>
+                            <li>Diagnósticos Ilimitados con IA</li>
+                            <li>Asistente de Riego y Plagas 24/7</li>
                             <li>Exportación de "Mi Impacto Sostenible"</li>
                             <li>Perfiles por cultivo/lote</li>
                             <li>Reportes de ahorro de agua e insumos</li>
                             <li>Descuentos en proveedores</li>
-                            <li>Acceso a analíticas avanzadas</li>
                         </ul>
                     </div>
 
-                </div> </div>
+                </div> 
+                
+                <div class="pricing__compare-trigger">
+                    <button id="compare-trigger" class="pricing__compare-btn">Ver tabla comparativa completa de funciones ˅</button>
+                </div>
+
+            </div>
         </section>
 
         <section class="faq" id="faq">
@@ -764,6 +769,119 @@
             </div>
     </footer>
 
+    <div id="compare-modal" class="modal">
+        <div class="modal__content">
+            
+            <div class="modal__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div class="modal__header-sticky-wrapper">
+                <h2 class="modal__title">Comparativa detallada de planes</h2>
+            </div>
+            
+            <div class="compare-table-wrapper">
+                <table class="compare-table" id="comparisonTable">
+                    <thead>
+                        <tr>
+                            <th class="sticky-col">Categoría / Funcionalidad</th>
+                            <th class="sticky-header col-free" data-plan="free">LeafIQ Free</th>
+                            <th class="sticky-header col-pro" data-plan="pro">🌿 LeafIQ Pro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="feature-category">DIAGNÓSTICO Y SALUD</td>
+                        </tr>
+                        <tr>
+                            <td>Escaneo y diagnóstico</td>
+                            <td class="text-val col-free">5 al mes</td>
+                            <td class="text-val col-pro">Ilimitados</td>
+                        </tr>
+                        <tr>
+                            <td>Detalle de severidad</td>
+                            <td class="text-val col-free">Básico</td>
+                            <td class="text-val col-pro">Detallado</td>
+                        </tr>
+                        <tr>
+                            <td>Historial de diagnósticos</td>
+                            <td class="text-val col-free">Últimos 7 días</td>
+                            <td class="text-val col-pro">Histórico completo</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" class="feature-category">GESTIÓN DE CULTIVO</td>
+                        </tr>
+                        <tr>
+                            <td>Registro de plantas</td>
+                            <td class="text-val col-free">Hasta 10</td>
+                            <td class="text-val col-pro">Ilimitadas</td>
+                        </tr>
+                        <tr>
+                            <td>Plan de cuidado (IA)</td>
+                            <td class="dash col-free">—</td>
+                            <td class="check col-pro">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Receta digital descargable</td>
+                            <td class="dash col-free">—</td>
+                            <td class="check col-pro">✓</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" class="feature-category">ALERTAS Y PREVENCIÓN</td>
+                        </tr>
+                        <tr>
+                            <td>Alertas climáticas</td>
+                            <td class="check col-free">✓</td>
+                            <td class="check col-pro">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Alerta brotes de plagas</td>
+                            <td class="dash col-free">—</td>
+                            <td class="check col-pro">✓</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" class="feature-category">BITÁCORA Y ANÁLISIS</td>
+                        </tr>
+                        <tr>
+                            <td>Bitácora de campo</td>
+                            <td class="text-val col-free">Registro simple</td>
+                            <td class="text-val col-pro">Fotos + Notas</td>
+                        </tr>
+                        <tr>
+                            <td>Reporte de rendimiento</td>
+                            <td class="dash col-free">—</td>
+                            <td class="check col-pro">✓</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" class="feature-category">SOPORTE Y AYUDA</td>
+                        </tr>
+                        <tr>
+                            <td>Chat con IA Experta</td>
+                            <td class="text-val col-free">Estándar</td>
+                            <td class="text-val col-pro">Modelo Avanzado</td>
+                        </tr>
+                        <tr>
+                            <td>Acceso a comunidad</td>
+                            <td class="check col-free">✓</td>
+                            <td class="check col-pro">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="modal__actions">
+                <button id="btn-highlight-free" class="pricing-card__button button--free">Elegir Free</button>
+                <button id="btn-highlight-pro" class="pricing-card__button button--pro">Elegir Pro</button>
+            </div>
+        </div>
+    </div>
+    
     </main>
     <script src="js/main.js"></script>
     
