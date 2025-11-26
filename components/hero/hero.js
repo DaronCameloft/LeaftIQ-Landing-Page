@@ -50,19 +50,30 @@ function handleHeroScroll() {
 
    if (scrollProgress < 0.33) {
 
+      
         const phase1Progress = scrollProgress / 0.33; 
 
-      
+        
         text1.style.opacity = 1;
         text2.style.opacity = 0;
         
-      
+        
         images.forEach(img => {
-            const startY = 600; 
-            const currentY = startY * (1 - phase1Progress); 
+            const index = parseInt(img.dataset.index);
             
-            img.style.opacity = phase1Progress; 
-            img.style.transform = `translate(-50%, -50%) translateY(${currentY}px) scale(1) rotate(0deg)`;
+           
+            if (index === 2) {
+                
+                const startY = 600; 
+                const currentY = startY * (1 - phase1Progress); 
+                
+                img.style.opacity = phase1Progress; 
+                img.style.transform = `translate(-50%, -50%) translateY(${currentY}px) scale(1) rotate(0deg)`;
+            } else {
+                
+                img.style.opacity = 0; 
+                img.style.transform = `translate(-50%, -50%) translateY(0px) scale(1) rotate(0deg)`;
+            }
         });
 
     } else if (scrollProgress < 0.66) {

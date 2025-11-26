@@ -28,7 +28,7 @@
 }
 
 .cta__button {
-    margin-top: 2rem;
+    margin-top: 4rem;
     z-index: 20;
     display: inline-flex;
     align-items: center;
@@ -84,4 +84,87 @@
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
     }
+}
+
+/* para la galeria de imagenes */
+.cta__clean-button {
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.5rem;
+    background: rgba(0,0,0,0.05);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    z-index: 30; 
+}
+.cta__clean-button:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+
+.cta__physics-scene {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cta.show-gallery .cta__physics-scene {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.9);
+}
+
+
+.cta__gallery {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    opacity: 0; 
+    pointer-events: none;
+    transition: opacity 0.8s ease 0.5s; 
+}
+
+.gallery-phone {
+    width: 15%; 
+    height: auto;
+    border-radius: 16px;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateY(50px);
+}
+
+
+.gallery-phone.p-3 {
+    width: 22%;
+    z-index: 10;
+}
+
+
+.cta.show-gallery .cta__gallery {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.cta.show-gallery .gallery-phone {
+    transform: translateY(0); 
+}
+
+
+@media (max-width: 768px) {
+    .cta__gallery {
+        flex-wrap: wrap;
+    }
+    .gallery-phone { width: 40%; }
+    .gallery-phone.p-3 { width: 50%; }
 }
