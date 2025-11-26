@@ -57,9 +57,10 @@
 
     transition: opacity 0.5s ease;
 
-    width: 140px;
-    height: 220px;
-    object-fit: cover;
+    width: 140px; /* Mantén el ancho fijo */
+    height: auto; /* ¡Deja que la altura se ajuste sola a la planta! */
+    /* Ya no necesitas object-fit */
+    
     border-radius: 8px;
     z-index: 5;
 }
