@@ -54,12 +54,10 @@
     transform: translate(-50%, -50%);
 
     opacity: 0;
-
     transition: opacity 0.5s ease;
 
-    width: 140px; /* Mantén el ancho fijo */
-    height: auto; /* ¡Deja que la altura se ajuste sola a la planta! */
-    /* Ya no necesitas object-fit */
+    width: 140px; 
+    height: auto; 
     
     border-radius: 8px;
     z-index: 5;
